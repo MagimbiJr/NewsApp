@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">The Magazine</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="btn_to_register">No Account yet? Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_now">Login now</string>
+    <string name="hot_news_daily">Hot News Daily</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="search">Search</string>
+    <string name="profile">profile</string>
+    <string name="recently_news">Recently News</string>
+    <string name="category">Category</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_recently_fragment">Hello recently fragment</string>
+    <string name="hello_category_fragment">Hello category fragment</string>
+    <string name="news_header">News Header</string>
+    <string name="date">date</string>
+    <string name="category_title">Category Title</string>
+    <string name="developer_name">Developer Name</string>
+    <string name="prof_activity_name">Profile</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="app_terms_and_policies">App Terms and Policies</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="rate_us_text">Give your rate and feedback</string>
+    <string name="more_apps">More Apps</string>
+    <string name="more_apps_text">More apps from developer</string>
+    <string name="logout">Logout</string>
+</resources>

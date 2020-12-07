@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tana.newsapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewsApp">
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/prof_activity_name"
+            android:theme="@style/LocalTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tana.newsapp.NewsFedsActivity" />
+
+        </activity>
+        <activity
+            android:name=".NewsFedsActivity"
+            android:theme="@style/LocalTheme">
+
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/LocalTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/LocalTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/LocalTheme">
+
+        </activity>
+    </application>
+
+</manifest>
