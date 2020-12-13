@@ -11,12 +11,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.tana.newsapp.model.RecentlyHeadlines;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecentlyNewsAdapter extends RecyclerView.Adapter<RecentlyNewsAdapter.RecentlyNewsViewHolder> {
     private final Context mContext;
-    private final ArrayList<RecentlyHeadlines> mHeadlines;
+    private final List<RecentlyHeadlines> mHeadlines;
 
-    public RecentlyNewsAdapter(Context context, ArrayList<RecentlyHeadlines> newsList) {
+    public RecentlyNewsAdapter(Context context, List<RecentlyHeadlines> newsList) {
         mContext = context;
         mHeadlines = newsList;
     }
@@ -35,12 +36,12 @@ public class RecentlyNewsAdapter extends RecyclerView.Adapter<RecentlyNewsAdapte
         holder.mNewsHeader.setText(newsList.getTitle());
         holder.mDescription.setText(newsList.getDescription());
         holder.mAuthor.setText(newsList.getAuthor());
-        holder.mNewsDate.setText(newsList.getDate());
+        holder.mNewsDate.setText(newsList.getPublishedAt());
     }
 
     @Override
     public int getItemCount() {
-        return mHeadlines.size();
+        return (mHeadlines == null) ? 0 : mHeadlines.size();
     }
 
     public static class RecentlyNewsViewHolder extends RecyclerView.ViewHolder {

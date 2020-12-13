@@ -2,23 +2,36 @@ package com.tana.newsapp.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.io.Serializable;
-
-public class RecentlyHeadlines implements Serializable {
+public class RecentlyHeadlines {
+    @SerializedName("source")
+    private SourceModel source;
+    @SerializedName("author")
+    private String author;
     @SerializedName("title")
     private String title;
     @SerializedName("description")
     private String description;
-    @SerializedName("author")
-    private String author;
-    @SerializedName("date")
-    private String date;
+//    @SerializedName("url")
+//    private String url;
+//    @SerializedName("urlToImage")
+//    private String urlToImage;
+    @SerializedName("publishedAt")
+    private String publishedAt;
 
-    public RecentlyHeadlines(String title, String description, String author, String date) {
-        this.title = title;
-        this.description = description;
+    public SourceModel getSource() {
+        return source;
+    }
+
+    public void setSource(SourceModel source) {
+        this.source = source;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
         this.author = author;
-        this.date = date;
     }
 
     public String getTitle() {
@@ -37,19 +50,27 @@ public class RecentlyHeadlines implements Serializable {
         this.description = description;
     }
 
-    public String getAuthor() {
-        return author;
+//    public String getUrl() {
+//        return url;
+//    }
+
+//    public void setUrl(String url) {
+//        this.url = url;
+//    }
+
+//    public String getUrlToImage() {
+//        return urlToImage;
+//    }
+
+//    public void setUrlToImage(String urlToImage) {
+//        this.urlToImage = urlToImage;
+//    }
+
+    public String getPublishedAt() {
+        return publishedAt;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
+    public void setPublishedAt(String publishedAt) {
+        this.publishedAt = publishedAt;
     }
 }
