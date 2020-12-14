@@ -11,10 +11,10 @@ public class RecentlyHeadlines {
     private String title;
     @SerializedName("description")
     private String description;
-//    @SerializedName("url")
-//    private String url;
-//    @SerializedName("urlToImage")
-//    private String urlToImage;
+    @SerializedName("url")
+    private String url;
+    @SerializedName("urlToImage")
+    private String urlToImage;
     @SerializedName("publishedAt")
     private String publishedAt;
 
@@ -50,21 +50,21 @@ public class RecentlyHeadlines {
         this.description = description;
     }
 
-//    public String getUrl() {
-//        return url;
-//    }
+    public String getUrl() {
+        return url;
+    }
 
-//    public void setUrl(String url) {
-//        this.url = url;
-//    }
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
-//    public String getUrlToImage() {
-//        return urlToImage;
-//    }
+    public String getUrlToImage() {
+        return urlToImage;
+    }
 
-//    public void setUrlToImage(String urlToImage) {
-//        this.urlToImage = urlToImage;
-//    }
+    public void setUrlToImage(String urlToImage) {
+        this.urlToImage = urlToImage;
+    }
 
     public String getPublishedAt() {
         return publishedAt;

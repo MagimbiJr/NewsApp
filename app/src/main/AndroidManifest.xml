@@ -3,6 +3,8 @@
     package="com.tana.newsapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp">
+        <activity android:name=".WebActivity"></activity>
         <activity
             android:name=".ProfileActivity"
             android:label="@string/prof_activity_name"
@@ -17,13 +20,10 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.tana.newsapp.NewsFedsActivity" />
-
         </activity>
         <activity
             android:name=".NewsFedsActivity"
-            android:theme="@style/LocalTheme">
-
-        </activity>
+            android:theme="@style/LocalTheme"></activity>
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/LocalTheme">
@@ -38,9 +38,7 @@
             android:theme="@style/LocalTheme" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/LocalTheme">
-
-        </activity>
+            android:theme="@style/LocalTheme"></activity>
     </application>
 
 </manifest>
